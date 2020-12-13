@@ -1,0 +1,89 @@
+{% extends 'layout.html' %}
+{% block body %}
+<br><br><br><br>
+
+
+
+<!-- ======= Blogs Section ======= -->
+<section id="services" class="services">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Blogs</h2>
+            <p>Check our Blogs</p>
+        </div>
+
+        <div class="row" >
+            {% for post in posts %}
+           
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300" style="margin-bottom:20px;" >
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-file"></i></div>
+                    <h4><a href="/post/{{ post.slug }}">{{ post.title }}</a></h4>
+                    <p>{{post.tagline}}</p>
+                </div>
+            </div>
+           
+          
+            
+            
+            {% endfor %}
+
+            <!-- <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in"
+                data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-file"></i></div>
+                    <h4><a href="">Sed ut perspiciatis</a></h4>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in"
+                data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-tachometer"></i></div>
+                    <h4><a href="">Magni Dolores</a></h4>
+                    <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-world"></i></div>
+                    <h4><a href="">Nemo Enim</a></h4>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-slideshow"></i></div>
+                    <h4><a href="">Dele cardo</a></h4>
+                    <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box">
+                    <div class="icon"><i class="bx bx-arch"></i></div>
+                    <h4><a href="">Divera don</a></h4>
+                    <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+                </div>
+            </div>-->
+
+        </div>
+        
+
+
+    </div>
+    <br><br><br>
+        <!-- Pager -->
+        <div class="container" data-aos="fade-up">
+            <a class="btn btn-primary float-right" href="#">Next Posts </a>
+            <a class="btn btn-primary float-left" href="#">Previous Posts </a>   
+        </div> 
+
+</section><!-- End Services Section -->
+
+
+{% endblock %}

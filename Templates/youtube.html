@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+
+
+<script rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"></script>
+
+
+<body>
+    <br><br><br><br><br><br>
+
+    <div class="container">
+        <h1 class="justify-content-center">Search youtube for confirming news!</h1>
+        <br><br>
+        <form id=form>
+            <div class="form-group">
+                <input type='text' class='form-control' id='search'>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" class="btn btn-danger" value="search">
+            </div>
+
+
+
+        </form>
+    
+    </div>
+    <br><br>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="videos">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="static/js/script.js"></script>
+
+{% endblock %}
