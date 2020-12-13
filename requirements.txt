@@ -37,7 +37,7 @@ lazy-object-proxy==1.4.3
 MarkupSafe==1.1.1
 matplotlib==3.3.2
 mccabe==0.6.1
-mysqlclient @ file:///C:/Users/kruna/Downloads/mysqlclient-1.4.6-cp38-cp38-win32.whl
+
 nltk==3.5
 numpy==1.18.4
 oauthlib==3.1.0
